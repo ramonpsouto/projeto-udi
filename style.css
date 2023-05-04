@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+main {
+    background-color: #f2eee9;
+    height: 100%;
+    margin: 6px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Rubik', sans-serif;
+}
