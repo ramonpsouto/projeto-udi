@@ -1,2 +1,2 @@
 # projeto-udi
-Site de UDI do segundo bimestre do ano2
+Projeto de UDI do segundo bimestre
