@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme-value="light">
+<html lang="pt-br" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto UDI</title>
+    <title>Projeto do gato</title>
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.custom.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top shadow">
+    <header class="bg-dark container-fluid">
+        <div id="headerContent" class="container d-flex align-items-center">
+            <a href="index.html"><i class="fa-solid fa-cat text-primary fa-xl" id="headerIcon"></i></a>
+            <button class="btn btn-outline-dark" id="themeButton"><i class="fa-solid fa-moon fa-xl themeButtonIcon" style="color: #ffffff;"></i></button>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top shadow-sm container-fluid">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-cat text-primary"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Curiosidades</a>
+                        <a class="nav-link" href="#">Link1</a>
                     </li>
 					<li class="nav-item">
-                        <a class="nav-link" href="#">Raças e características</a>
+                        <a class="nav-link" href="#">Link2</a>
                     </li>
 					<li class="nav-item">
-                        <a class="nav-link" href="#">Curiosidades</a>
+                        <a class="nav-link" href="#">Link3</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="text" placeholder="Buscar">
-                    <button class="btn btn-primary" type="button"><i class="fa-solid fa-magnifying-glass"></i></button></button>
+                    <button class="btn btn-outline-primary" type="button"><i class="fa-solid fa-magnifying-glass"></i></button></button>
                 </form>
             </div>
         </div>
     </nav>
     <main>
-
-        <button id="themeButton">Alterar tema</button>
-
         <section class="container">
             <div class="row">
                 <div class="col-md-3 d-flex justify-content-center align-items-center">
@@ -98,20 +100,22 @@
         </section>
     </main>
     <footer class="bg-dark">
-        <p>Site feito por Ramon e Kayky 2IPI</p>
+        <p class="text-light">Site feito por Ramon e Kayky 2IPI</p>
     </footer>
-    <scrip src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
         const themeButton = document.getElementById('themeButton');
         const htmlElement = document.getElementsByTagName('html')[0];
-    
+        
         themeButton.addEventListener('click', function() {
-        if (htmlElement.getAttribute('data-bs-theme') === 'light') {
+            if (htmlElement.getAttribute('data-bs-theme') === 'light') {
             htmlElement.setAttribute('data-bs-theme', 'dark');
-        } else {
+            themeButton.innerHTML = '<i class="fa-solid fa-sun fa-xl themeButtonIcon" style="color: #ffffff;"></i>';
+            } else {
             htmlElement.setAttribute('data-bs-theme', 'light');
-        }
+            themeButton.innerHTML = '<i class="fas fa-moon fa-xl themeButtonIcon" style="color: #ffffff;"></i>';
+            }
         });
-    </script>        
+    </script>
 </body>
 </html>
