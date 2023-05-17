@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik&display=swap');
 
 header {
-    height: 36px;
+    height: 56px;
 }
 
-#headerContent {
-    display: flex;
-    justify-content: space-between;
+header div {
+   height: 56px;
 }
-
 section {
     padding: 1rem;
 }
@@ -25,10 +23,20 @@ h1 {
 }
 
 p {
+	margin-top: 1rem;
     font-family: 'Rubik', sans-serif;
     text-align: justify;
 }
 
 footer {
     padding: 1rem;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border-radius: 24px; /* Rounded corners */
 }

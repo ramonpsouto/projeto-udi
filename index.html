@@ -12,10 +12,10 @@
 </head>
 <body>
     <header class="bg-dark container-fluid">
-        <div id="headerContent" class="container d-flex align-items-center">
-            <a href="index.html"><i class="fa-solid fa-cat text-primary fa-xl" id="headerIcon"></i></a>
-            <button class="btn btn-outline-dark" id="themeButton"><i class="fa-solid fa-moon fa-xl themeButtonIcon" style="color: #ffffff;"></i></button>
-        </div>
+		<div class="container justify-content-between d-flex align-items-center">
+			<a href="index.html"><i class="fa-solid fa-cat text-primary fa-xl" id="headerIcon"></i></a>
+			<button class="btn btn-outline-dark" id="themeButton"><i class="fa-solid fa-moon fa-xl themeButtonIcon" style="color: #ffffff;"></i></button>
+		</div>
     </header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top shadow-sm container-fluid">
         <div class="container">
@@ -27,12 +27,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link1</a>
                     </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="#">Link2</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="#">Link3</a>
-                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="text" placeholder="Buscar">
@@ -43,6 +37,7 @@
     </nav>
     <main>
         <section class="container">
+		 <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></button> 
             <div class="row">
                 <div class="col-md-3 d-flex justify-content-center align-items-center">
                     <img src="assets/img/gato.jpg" alt="Foto de um gato" class="img-fluid rounded shadow">
@@ -117,5 +112,26 @@
             }
         });
     </script>
+	<script>
+		// Get the button:
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
 </body>
 </html>
