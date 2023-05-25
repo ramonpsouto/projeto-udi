@@ -7,14 +7,16 @@
     <title>Projeto do gato</title>
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/bootstrap.custom.css">
+    <link rel="stylesheet" href="assets/css/bootstrap_customizado.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="bg-dark container-fluid">
-		<div class="container justify-content-between d-flex align-items-center">
+		<div class="container justify-content-between d-flex align-items-center py-1">
 			<a href="index.html"><i class="fa-solid fa-cat text-primary fa-xl" id="headerIcon"></i></a>
-			<button class="btn btn-outline-dark" id="themeButton"><i class="fa-solid fa-moon fa-xl themeButtonIcon" style="color: #ffffff;"></i></button>
+			<button class="btn btn-outline-dark" id="themeButton">
+                <i class="fa-solid fa-moon fa-xl themeButtonIcon text-light"></i>
+            </button>
 		</div>
     </header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top shadow-sm container-fluid">
@@ -35,103 +37,68 @@
             </div>
         </div>
     </nav>
-    <main>
-        <section class="container">
-		 <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></button> 
-            <div class="row">
-                <div class="col-md-3 d-flex justify-content-center align-items-center">
-                    <img src="assets/img/gato.jpg" alt="Foto de um gato" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-md-9 d-flex justify-content-center align-items-center">
-                    <p>Os gatos são animais incríveis e fascinantes. Eles são conhecidos por serem independentes, mas também gostam muito de receber carinho e atenção. Além disso, os gatos são animais muito inteligentes e curiosos, sempre explorando e descobrindo coisas novas.</p>
-                </div>
+    <main class="container p-3">
+        <button onclick="topFunction()" id="BackTopButton" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></button> 
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="assets/img/gato.jpg" alt="Foto de um gato" class="img-fluid rounded shadow">
             </div>
-            <h1 class="text-primary">Curiosidades sobre gatos</h1>
-            <p>Os gatos são animais cheios de mistérios e curiosidades. Por exemplo, você sabia que os gatos têm cerca de 100 sons diferentes para se comunicar? Eles também têm habilidades incríveis de caça, graças à sua excelente visão e audição aguçadas. Outra curiosidade interessante é que, ao contrário do que muita gente pensa, os gatos não enxergam em preto e branco, eles conseguem enxergar cores, mas não tantas como nós.</p>
-            <table class="table table-bordered">
-                <thead>
-                    <th>Raças de gatos</th>
-                    <th>Características</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Siamês</td>
-                        <td>Pelagem curta, olhos azuis, vocaliza bastante</td>
-                    </tr>
-                    <tr>
-                        <td>Persa</td>
-                        <td>Pelagem longa, rosto achatado, tranquilo</td>
-                    </tr>
-                    <tr>
-                        <td>Bengal</td>
-                        <td>Pelagem com manchas, gosta de água, bastante ativo</td>
-                    </tr>
-                    <tr>
-                        <td>Maine Coon</td>
-                        <td>Grande porte, pelagem densa, sociável</td>
-                    </tr>
-                    <tr>
-                        <td>Scottish Fold</td>
-                        <td>Orelhas dobradas para baixo, pelagem densa, carinhoso</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                        <li>Gatos são animais independentes, mas também gostam de receber carinho e atenção.</li>
-                        <li>Os gatos têm habilidades incríveis de caça, graças à sua excelente visão e audição aguçadas.</li>
-                        <li>Os gatos são excelentes companheiros para pessoas que vivem em apartamentos, pois são animais que se adaptam bem a espaços pequenos. </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ol>
-                        <li>Gatos são animais muito limpos e passam boa parte do dia se lambendo.</li>
-                        <li>A expectativa de vida dos gatos pode variar entre 10 e 20 anos, dependendo da raça e dos cuidados recebidos.</li>
-                        <li>Ao contrário dos cães, os gatos não precisam ser passeados, pois fazem suas necessidades dentro de casa.</li>
-                    </ol>
-                </div>
+            <div class="col-md-9 d-flex justify-content-center align-items-center mt-3">
+                <p>Os gatos são animais incríveis e fascinantes. Eles são conhecidos por serem independentes, mas também gostam muito de receber carinho e atenção. Além disso, os gatos são animais muito inteligentes e curiosos, sempre explorando e descobrindo coisas novas.</p>
             </div>
-        </section>
+        </div>
+        <h1 class="text-primary text-center mt-1 mb-1">Curiosidades sobre gatos</h1>
+        <p>Os gatos são animais cheios de mistérios e curiosidades. Por exemplo, você sabia que os gatos têm cerca de 100 sons diferentes para se comunicar? Eles também têm habilidades incríveis de caça, graças à sua excelente visão e audição aguçadas. Outra curiosidade interessante é que, ao contrário do que muita gente pensa, os gatos não enxergam em preto e branco, eles conseguem enxergar cores, mas não tantas como nós.</p>
+        <table class="table table-bordered">
+            <thead>
+                <th>Raças de gatos</th>
+                <th>Características</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Siamês</td>
+                    <td>Pelagem curta, olhos azuis, vocaliza bastante</td>
+                </tr>
+                <tr>
+                    <td>Persa</td>
+                    <td>Pelagem longa, rosto achatado, tranquilo</td>
+                </tr>
+                <tr>
+                    <td>Bengal</td>
+                    <td>Pelagem com manchas, gosta de água, bastante ativo</td>
+                </tr>
+                <tr>
+                    <td>Maine Coon</td>
+                    <td>Grande porte, pelagem densa, sociável</td>
+                </tr>
+                <tr>
+                    <td>Scottish Fold</td>
+                    <td>Orelhas dobradas para baixo, pelagem densa, carinhoso</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>Gatos são animais independentes, mas também gostam de receber carinho e atenção.</li>
+                    <li>Os gatos têm habilidades incríveis de caça, graças à sua excelente visão e audição aguçadas.</li>
+                    <li>Os gatos são excelentes companheiros para pessoas que vivem em apartamentos, pois são animais que se adaptam bem a espaços pequenos. </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ol>
+                    <li>Gatos são animais muito limpos e passam boa parte do dia se lambendo.</li>
+                    <li>A expectativa de vida dos gatos pode variar entre 10 e 20 anos, dependendo da raça e dos cuidados recebidos.</li>
+                    <li>Ao contrário dos cães, os gatos não precisam ser passeados, pois fazem suas necessidades dentro de casa.</li>
+                </ol>
+            </div>
+        </div>
     </main>
-    <footer class="bg-dark">
-        <p class="text-light">Site feito por Ramon e Kayky 2IPI</p>
+    <footer class="bg-dark p-3">
+        <p class="text-light mt-1">Site feito por Ramon e Kayky 2IPI</p>
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const themeButton = document.getElementById('themeButton');
-        const htmlElement = document.getElementsByTagName('html')[0];
-        
-        themeButton.addEventListener('click', function() {
-            if (htmlElement.getAttribute('data-bs-theme') === 'light') {
-            htmlElement.setAttribute('data-bs-theme', 'dark');
-            themeButton.innerHTML = '<i class="fa-solid fa-sun fa-xl themeButtonIcon" style="color: #ffffff;"></i>';
-            } else {
-            htmlElement.setAttribute('data-bs-theme', 'light');
-            themeButton.innerHTML = '<i class="fas fa-moon fa-xl themeButtonIcon" style="color: #ffffff;"></i>';
-            }
-        });
-    </script>
-	<script>
-		// Get the button:
-		let mybutton = document.getElementById("myBtn");
-
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			mybutton.style.display = "block";
-		  } else {
-			mybutton.style.display = "none";
-		  }
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0; // For Safari
-		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		} 
-	</script>
+    <script src="assets/js/themeButton.js"></script>
+    <script src="assets/js/backToTopButton.js"></script>
 </body>
 </html>
